@@ -75,10 +75,10 @@ export default function Hero() {
             ))}
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginTop: "24px" }}>
-            {[
+             {[
   ["Data", "Engineering"],
   ["Backend", "Development"],
-  ["ETL", "Automation"],
+  ["AI", "Automation"],
   ["Web", "Scraping"],
 ].map(([title, subtitle]) => (
   <div
