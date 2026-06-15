@@ -10,7 +10,7 @@ export default function Nav() {
       zIndex: 100, boxShadow: "0 3px 0 var(--black)"
     }}>
       <div style={{ fontFamily: "'Unbounded', sans-serif", fontWeight: 900, fontSize: "14px" }}>
-        MRRP.DEV
+        Rozi Rizky
       </div>
       <div className="nav-links" style={{ display: "flex", gap: 0 }}>
         {["About", "Experience", "Skills", "Contact"].map((item) => (
