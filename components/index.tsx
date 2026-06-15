@@ -21,7 +21,7 @@ export function Ticker() {
 export function About() {
   const contacts = [
     { icon: "📧", label: "Email", value: "rozirizky94@gmail.com", href: "mailto:rozirizky94@gmail.com" },
-    { icon: "📱", label: "Phone", value: "08979312997", href: null },
+    { icon: "📱", label: "Phone", value: "08979312997", href: "https://wa.me/628979312997" },
     { icon: "💼", label: "LinkedIn", value: "rozi-priyanto5753562a1", href: "https://linkedin.com/in/rozi-priyanto5753562a1" },
     { icon: "🐙", label: "GitHub", value: "github.com/rozirizky", href: "https://github.com/rozirizky/" },
   ];
