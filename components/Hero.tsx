@@ -38,7 +38,7 @@ export default function Hero() {
           animation: "slideUp 0.5s 0.2s both"
         }}>
           Data Engineer building scalable pipelines, web scrapers, and API-driven backends.
-          Automating the boring stuff so data just <em>flows</em>.
+         <em>flows</em>.
         </p>
         <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" as const, animation: "slideUp 0.5s 0.3s both" }}>
           <a href="#experience" className="btn btn-primary">View Work ↓</a>
@@ -75,12 +75,45 @@ export default function Hero() {
             ))}
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginTop: "24px" }}>
-            {[["1+","Years XP"],["4","Platforms"],["E2E","Pipelines"],["∞","Data"]].map(([num,label]) => (
-              <div key={label} style={{ background: "var(--white)", border: "var(--border)", padding: "16px", boxShadow: "3px 3px 0 var(--black)" }}>
-                <div style={{ fontFamily: "'Unbounded', sans-serif", fontSize: "28px", fontWeight: 900, color: "var(--blue)", lineHeight: 1 }}>{num}</div>
-                <div style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase" as const, marginTop: "4px", color: "#555" }}>{label}</div>
-              </div>
-            ))}
+            {[
+  ["Data", "Engineering"],
+  ["Backend", "Development"],
+  ["ETL", "Automation"],
+  ["Web", "Scraping"],
+].map(([title, subtitle]) => (
+  <div
+    key={title}
+    style={{
+      background: "var(--white)",
+      border: "var(--border)",
+      padding: "16px",
+      boxShadow: "3px 3px 0 var(--black)",
+    }}
+  >
+    <div
+      style={{
+        fontFamily: "'Unbounded', sans-serif",
+        fontSize: "20px",
+        fontWeight: 900,
+        color: "var(--blue)",
+        lineHeight: 1.1,
+      }}
+    >
+      {title}
+    </div>
+    <div
+      style={{
+        fontSize: "10px",
+        fontWeight: 700,
+        textTransform: "uppercase",
+        marginTop: "6px",
+        color: "#555",
+      }}
+    >
+      {subtitle}
+    </div>
+  </div>
+))}
           </div>
         </div>
 
